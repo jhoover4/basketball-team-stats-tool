@@ -27,6 +27,7 @@ class StatsTool {
         this.jsonData = (JSONObject) obj;
     }
 
+    @SuppressWarnings("unchecked cast")
     private void createPlayers() {
         ArrayList<HashMap> rawPlayerData = (ArrayList<HashMap>) this.jsonData.get("players");
 
@@ -80,6 +81,7 @@ class StatsTool {
         }
     }
 
+    @SuppressWarnings("unchecked cast")
     private void setTeamNames() {
         this.teamNames = (ArrayList<String>) this.jsonData.get("teams");
     }

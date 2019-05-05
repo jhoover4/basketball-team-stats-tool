@@ -64,7 +64,7 @@ class Team {
     }
 
     private void createTeamGuardians() {
-        Set guardiansSet = new HashSet<>();
+        Set<String> guardiansSet = new HashSet<>();
 
         for (Player player : this.players) guardiansSet.addAll(player.getGuardians());
 

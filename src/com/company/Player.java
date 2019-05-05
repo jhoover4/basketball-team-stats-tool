@@ -9,7 +9,7 @@ class Player {
     private int height;
     private String name;
     private boolean experience;
-    private List guardians;
+    private List<String> guardians;
 
     Player(HashMap rawData) {
         this.rawData = rawData;
@@ -50,7 +50,7 @@ class Player {
         this.guardians = Arrays.asList(guardians.split(" and "));
     }
 
-    List getGuardians() {
+    List<String> getGuardians() {
         return guardians;
     }
 }
